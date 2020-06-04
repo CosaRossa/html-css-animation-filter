@@ -130,11 +130,19 @@
 
 @keyframes move-dx {
   0% {left: 10%; top: -10px;}
-  30% {left: calc(100% - 30px);top: -10px;}
-  45% {left: calc(100% - 30px);top: 100%;}
-  75% {left: 0;top: 100%;}
-  90% {left: -15px;top: -10px;}
-  100% {left: 10%;top: -10px;}
+  30% {left: calc(100% - 30px); top: -10px; transform: rotate(0deg)}
+  31% {transform: rotate(90deg)}
+  44% {transform: rotate(90deg)}
+  45% {left: calc(100% - 30px); top: 90%;}
+  46% {transform: rotate(180deg)}
+  74% {transform: rotate(180deg)}
+  75% {left: -30px; top: 90%;}
+  76% {transform: rotate(270deg)}
+  89% {transform: rotate(270deg)}
+  90% {left: -30px; top: -10px;}
+  91% {transform: rotate(360deg)}
+  99% {transform: rotate(360deg)}
+  100% {left: 10%; top: -10px;}
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
@@ -143,9 +151,17 @@
 
 @keyframes move-sx {
   0% {right: 10%; bottom: -10px;}
-  30% {right: calc(100% - 40px);bottom: -10px;}
-  45% {right: calc(100% - 40px);bottom: 100%;}
-  75% {right: 0;bottom: 100%;}
-  90% {right: -10px;bottom: -10px;}
+  30% {right: calc(100% - 30px);bottom: -10px; transform: rotate(0deg)}
+  31% {transform: rotate(90deg)}
+  44% {transform: rotate(90deg)}
+  45% {right: calc(100% - 30px);bottom: 90%;}
+  46% {transform: rotate(180deg)}
+  74% {transform: rotate(180deg)}
+  75% {right: -30px;bottom: 90%;}
+  76% {transform: rotate(270deg)}
+  89% {transform: rotate(270deg)}
+  90% {right: -30px;bottom: -10px;}
+  91% {transform: rotate(360deg)}
+  99% {transform: rotate(360deg)}
   100% {right: 10%;bottom: -10px;}
 }
