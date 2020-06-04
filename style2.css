@@ -36,17 +36,15 @@
 
 /* Esercizio 5 */
 .ex-5-square {
-  transition: all 3s;
+  transition: all 2s;
 }
 
 .ex-5-square:hover {
-  width: 80px;
-  height: 80px;
+  transform: scale(2);
 }
 
 .ex-5-square:active {
-  width: 40px;
-  height: 40px;
+  transform: scale(0.5);
 }
 
 /* Esercizio 6 */
@@ -81,8 +79,7 @@
 .ex-9-img:hover {
   filter: brightness(140%) sepia(50%);
   border-radius: 1rem;
-  width: 55%;
-  height: auto;
+  transform: scale(1.5);
 }
 
 /* Esercizio 10 */
